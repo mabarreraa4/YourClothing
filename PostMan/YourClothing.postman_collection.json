@@ -1,0 +1,686 @@
+{
+	"info": {
+		"_postman_id": "6eeee6d6-0d46-4e30-a613-e539b3e09218",
+		"name": "YourClothing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post prenda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t \"prenda\":{\n\t\t\"TipoPrendas\": \"falda\",\n\t\t\"Tallas\": \"XL\"\n\t}\t\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/prendas",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"prendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post prenda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/prendas",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"prendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar prenda por su id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60.ws-us0.gitpod.io/prendas/MT/L",
+					"protocol": "https",
+					"host": [
+						"3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"prendas",
+						"MT",
+						"L"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get prenda by Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"prenda\": {\n\t\t\"compradores\": \"5d31bf0a1c9d440000dab95d\",\n\t\t\"facturas\": \"5d40ada01c9d4400008fb483\",\n\t\t\"tiempoUsos\": \"5d48863d1de19074d97c2ab3\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/prendas/5d30c1f878772707807794eb",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"prendas",
+						"5d30c1f878772707807794eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post comprador",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre1\" : \"Carmen\",\n\t\"nombre2\" : \"Maria\",\n\t\"apellido1\" : \"Perez\",\n\t\"apellido2\" : \"Alvarez\",\n\t\"identificacion\" : \"70952367\",\n\t\"pais\" : \"Colombia\",\n\t\"direccion\" : \"Lt 3 Mz 4\",\n\t\"telefono\" : \"7890346\",\n\t\"calificacion\" : \"6\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/compradores",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"compradores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get comprador",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/compradores",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"compradores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put comprador by Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"comprador\": {\n\t\t\"prendas\": \"5d30c1f878772707807794eb\",\n\t\t\"facturas\": \"5d40ada01c9d4400008fb483\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/compradores/5d48f61af315850ae96af3ff",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"compradores",
+						"5d48f61af315850ae96af3ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar tiempouso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dias_uso\": \"6\",\n\t\"remodelar\": \"si\",\n\t\"arreglar\": \"no\"\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/tiempousos",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"tiempousos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get tiempouso",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60.ws-us0.gitpod.io/tiempo_uso/si",
+					"protocol": "https",
+					"host": [
+						"3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"tiempo_uso",
+						"si"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put tiempousos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tiempoUso\": {\n\t\t\"prendas\": \"5d30c1f878772707807794eb\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/tiempousos/5d48863d1de19074d97c2ab3",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"tiempousos",
+						"5d48863d1de19074d97c2ab3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factura por su id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/facturas/",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"facturas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get factura",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/facturas",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"facturas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put facturas",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"factura\": {\n\t\t\"prendas\": \"5d30c1f878772707807794eb\",\n\t\t\"comprador_id\": \"d349c711c9d440000b92486\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/facturas/5d40ada01c9d4400008fb483",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"facturas",
+						"5d40ada01c9d4400008fb483"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get marcas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60.ws-us0.gitpod.io/marcas/pais/estadosunidos",
+					"protocol": "https",
+					"host": [
+						"3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"marcas",
+						"pais",
+						"estadosunidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put marcas",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"marca\": {\n\t\t\"prendas\": \"5d30c1f878772707807794eb\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/marcas/5d349cd11c9d440000b92487",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"marcas",
+						"5d349cd11c9d440000b92487"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get colores",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60.ws-us0.gitpod.io/colores/estampado/unicolor",
+					"protocol": "https",
+					"host": [
+						"3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"colores",
+						"estampado",
+						"unicolor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put colores",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"color\": {\n\t\t\"prendas\": \"5d30c1f878772707807794eb\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/colores/5d35c496f9940808c443b9e6",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"colores",
+						"5d35c496f9940808c443b9e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get vendedores",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60.ws-us0.gitpod.io/vendedores/Colombia/10",
+					"protocol": "https",
+					"host": [
+						"3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"vendedores",
+						"Colombia",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put vendedores",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendedor\": {\n\t\t\"prendas\": \"5d30c1f878772707807794eb\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "https://3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58.ws-us0.gitpod.io/vendedores/5d349d371c9d440000b92489",
+					"protocol": "https",
+					"host": [
+						"3000-f2a8ae7a-23c2-46dd-a81a-0c7dfd1aba58",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"vendedores",
+						"5d349d371c9d440000b92489"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "version",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60.ws-us0.gitpod.io/version",
+					"protocol": "https",
+					"host": [
+						"3000-dd20424f-81dd-4232-bfb4-7eaac58f1d60",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "version",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\": Patricia Pelaez\n\t\"pais\": colombia\n\t\"proveedor\": Sandra Tamer\n}"
+				},
+				"url": {
+					"raw": "https://3000-b69dc369-490d-46a5-99c9-9fe1c631cce0.ws-us0.gitpod.io/marcas",
+					"protocol": "https",
+					"host": [
+						"3000-b69dc369-490d-46a5-99c9-9fe1c631cce0",
+						"ws-us0",
+						"gitpod",
+						"io"
+					],
+					"path": [
+						"marcas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
